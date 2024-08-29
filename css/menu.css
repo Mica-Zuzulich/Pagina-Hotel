@@ -1,0 +1,98 @@
+/* CONFIGURACIONES DE ESTILOS PARA EL MENÚ */
+
+/* --------------- CONFIGURACIONES PARA LOS TAG --------------- */
+
+li {
+    padding: 10px 0px;
+    border: 1px solid #fff;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    
+}
+
+/* --------------- CONFIGURACIONES PARA LAS CLASES --------------- */
+
+.menu {
+    display: block;
+    gap: 20px;
+    padding: 10px;
+    list-style-type: none;
+    background-color: #312f2f;
+    border: 1px solid #fff;
+    width: 180px;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+.menuOcultar {
+    display: none;
+    height: 210px;
+}
+
+.menuMostrar {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 22px;
+    height: 210px;
+}
+
+/* --------------- CONFIGURACIONES PARA ID --------------- */
+
+#iconoMenu {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+/* --------------- CONFIGURACIONES PARA MODO TABLET ---------------*/
+
+@media only screen and (min-width: 768px) {
+
+    li {
+        padding: 10px 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #312f2f;
+        box-shadow:  1px 1px 5px #818080;
+    }
+
+    li a {
+        font-size: 12px;
+        color: #e9e3e3;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 642px;
+        border: none;
+        background-color: #312f2f67;
+        border-radius: 4px;
+    }
+
+    .menuMostrar, .menuOcultar {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 0px;
+        height: 60px;
+    }
+
+    #iconoMenu {
+        display: none;
+    }
+}

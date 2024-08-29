@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="css/modoOscuro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/tablasformulario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <div class="sectorSuperior">
+        <header>
+            <img src="img/logo.png" alt="logo del Hotel" class="logo" >
+            <div id="estrellas">✯✯✯</div>
+            <h1>Hotel de la Sierra</h1>
+            <!-- BLOQUE PARA EL INTERRUPTOR MODO OSCURO/CLARO -->
+            <div class="contenedor-Interruptor">
+                <div class="marco marco-ModoClaro" id="marcoInterruptor">
+                    <div class="interruptor boton-ModoClaro" id="interruptor"></div>
+                </div>
+            </div>
+            <!-- FIN BLOQUE INTERRUPTOR MODO OSCURO/CLARO -->
+            <img src="img/menu1.png" alt="Icono Menú" id="iconoMenu">
+        </header>
+        <nav class="menuOcultar" id="menuDesplegable">
+            <ul class="menu">
+                <li><a href="index.html">El Hotel</a></li>
+                <li><a href="html/habitaciones.html">Habitaciones</a></li>
+                <li><a href="html/gastronomia.html">Gastronomía</a></li>
+                <li><a href="html/recreacion.html">Recreación</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-ModoClaro">
+        <section class="sectorCentral">
+            <div class="sobreTandil">
+                <h4 class="subtitulos subtitulos-ModoClaro" id="subtitulo subSobreNosotros">SOBRE NOSOTROS</h4>
+                <p class="primerLetraGrande parrafo" id="tarjetaPresentacionTandil">
+                    Las sierras tandilenses, ubicadas en la periferia de la ciudad, es un icónico lugar que alberga una rica historia y una vibrante vida cultural. Este paisaje serrano, flanqueado por edificios históricos y comercios locales, ofrece un ambiente encantador para pasear, disfrutar de la arquitectura colonial y los murales artísticos que adornan sus paredes. Es un punto de encuentro para residentes y visitantes, donde se puede disfrutar de cafés, artesanías y eventos culturales. Su paisaje es un reflejo de la identidad y el espíritu comunitario de la ciudad, atrayendo a aquellos que desean sumergirse en su ambiente pintoresco y acogedor.</p>
+            </div>
+            <div class="sobreHotel">
+                <div class="contendedorImagenes">
+                    <img src="img/hotel.jpg" alt="Imagen del Hotel" class="imagenes">
+                </div>
+                <div class="tarjetaTematica">
+                    <h4 class="subtitulos subtitulos-ModoClaro" id="subtitulo subInstalaciones">INSTALACIONES</h4>
+                    <p class="primerLetraGrande parrafo">
+                        Nuestro recinto se encuentra situado en el corazón de las sierras tandilenses inmersas en la naturaleza y la tranquilidad que nos ofrece los alrededores de nuestra querida ciudad. Con instalaciones modernas y con la tecnología sustentable necesaria para hacer de una experiencia cálida, tranquila y agradeble para nuestros huéspedes.  
+                    </p>
+                </div>
+            </div>
+            <div class="sobreActividades">
+                <div class="contendedorImagenes">
+                    <img src="img/familia.jpg" alt="Imagen de familia caminando" class="imagenes">
+                </div>
+                <a href="html/informes.html"><button class="botones">INFORMACIÓN</button></a>
+            </div>
+        </section>
+        <section class="sectorInferior">
+            <div class="sobreContacto">
+                <div class="contendedorImagenes" id="portaRetrato">
+                    <img src="img/logo.png" alt="Imagen del Hotel" class="imagenes" id="escudoHotel">
+                    <div id="estrellas">✯✯✯</div>
+                </div>
+                <div class="contacto contacto-ModoClaro" id="tarjetaDeContacto">
+                    <p>Calle Guevara Gallardo 1342 - Tandil</p>
+                    <p>www.hoteldelasierras_tandil@gmail.com</p>
+                    <p>2942 - 43276523</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="desarrolladores desarrolladores-ModoClaro" id="tarjetasAlumnos">
+            <p>Micaela Zuzulich & Guillermo Castiglioni</p>
+            <p>TUDAI 2024 - UNICEN</p>
+        </div>
+    </footer>
+    <div class="container">
+        <h1>Habitaciones Disponibles</h1>
+        
+        <form id="formulario">
+            <input type="text" id="numero" placeholder="Número de Habitación">
+            <input type="text" id="tipo" placeholder="Tipo de Habitación">
+            <input type="number" id="precio" placeholder="Precio por Noche">
+            <select id="estado">
+                <option value="disponible">Disponible</option>
+                <option value="ocupada">Ocupada</option>
+                <option value="limpieza">En Limpieza</option>
+            </select>
+            <button type="submit">Agregar Habitación</button>
+        </form>
+
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Tipo</th>
+                    <th>Precio (Noche)</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>      
+    <script type="text/javascript" src="js/menuDesplegable.js"></script>
+    <script type="text/javascript" src="js/modoOscuro.js"></script>
+    <script type="text/javascript" src="js/tablaformulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* ESTILOS PARA SER APLICADOS EN LA TABLA DE PRECIOS */
+
+.tabla-precios {
+    width: 300px;
+    border-collapse:collapse;
+    margin: 25px 0px;
+    
+}
+
+.tabla-precios th, .tabla-precios tr {
+    padding: 18px;
+}
+
+.tabla-precios th {
+    background-color: #302f2f;
+    color:rgb(247, 247, 239);
+    text-align: center;
+    font-weight: 800;
+    border: 1px solid #302f2f;
+    
+}
+
+.tabla-precios td{
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #302f2f;
+}
+
+.lista-pagos{
+    margin: 30px 0px;
+    list-style-type:square;    
+}
+
+.lista-pagos li {
+    border: none;
+}
+
+/* --------------- CONFIGURACIONES PARA MODO TABLET ---------------*/
+
+@media only screen and (min-width: 768px) {
+    
+    .tarjetaTematica {
+        padding-top: 30px;
+    }
+
+    .lista-pagos li {
+        background-color: #b6c59a00;
+        box-shadow: none;
+    }
+
+}

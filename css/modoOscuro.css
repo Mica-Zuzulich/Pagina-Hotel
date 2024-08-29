@@ -1,0 +1,54 @@
+/* PROPORCIONA EL ESTILO DEL INTERRUPTOR DE MODO OSCURO / MODO CLARO */
+
+.contenedor-Interruptor {
+    position: absolute;
+    top: 33px;
+    right: 54px;
+}
+
+.marco {
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #f1ecec8a;
+}
+
+.marco-ModoClaro {
+    border: 1px solid #1b1b1b8a;
+
+}
+
+.marco-ModoOscuro {
+    border: 1px solid #caaeae;
+}
+
+.interruptor {
+    border: 0px solid #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 75px;
+}
+
+.boton-ModoClaro {
+    transform:translateX(0%);
+    background-color: rgb(59, 113, 184);
+    transition: transform 0.3s linear;
+}
+
+.boton-ModoOscuro {
+    transform:translateX(100%);
+    background-color: rgb(59, 184, 86);
+    transition: transform 0.3s linear;
+}
+
+/* --------------- CONFIGURACIONES PARA MODO TABLET ---------------*/
+
+@media only screen and (min-width: 768px) {
+    
+    .contenedor-Interruptor {
+        position: absolute;
+        top: 90px;
+        right: 15px;
+    }
+    
+}

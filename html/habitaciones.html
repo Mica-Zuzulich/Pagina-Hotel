@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/modoOscuro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="sectorSuperior">
+        <header>
+            <a href="../index.html"><img src="../img/logo.png" alt="logo del Hotel" class="logo" ></a>
+            <div id="estrellas">✯✯✯</div>
+            <h1>Hotel de la Sierra</h1>
+            <!-- BLOQUE PARA EL INTERRUPTOR MODO OSCURO/CLARO -->
+            <div class="contenedor-Interruptor">
+                <div class="marco marco-ModoClaro" id="marcoInterruptor">
+                    <div class="interruptor boton-ModoClaro" id="interruptor"></div>
+                </div>
+            </div>
+            <!-- FIN BLOQUE INTERRUPTOR MODO OSCURO/CLARO -->
+            <img src="../img/menu1.png" alt="Icono Menú" id="iconoMenu">
+        </header>
+        <nav class="menuOcultar" id="menuDesplegable">
+            <ul class="menu">
+                <li><a href="../index.html">El Hotel</a></li>
+                <li><a href="../html/habitaciones.html">Habitaciones</a></li>
+                <li><a href="../html/gastronomia.html">Gastronomía</a></li>
+                <li><a href="../html/recreacion.html">Recreación</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-ModoClaro">
+        <div class="sectorCentral">
+            <div class="sobreHotel">
+                <div class="tarjetaTematica">
+                    <h4 class="subtitulos subtitulos-ModoClaro" id="subtitulo subInstalaciones">SUITES</h4>
+                    <p class="primerLetraGrande parrafo">
+                        Estas luminosas y amplias habitaciones ofrecen un ambiente elegante y atemporal. Con interiores a medida, ventanas de piso a techo, balcón privado, ropa de cama italiana, baños de lujo y vistas a la ciudad; las suites son la opción favorita tanto para los viajeros de negocios como de placer.
+                    </p>
+                </div>
+                <div class="contendedorImagenes">
+                    <img src="../img/suites.jpeg" alt="Imagen de habitación suite" class="imagenes">
+                </div>
+            </div>
+            <div class="sobreHotel">
+                <div class="tarjetaTematica">
+                    <h4 class="subtitulos subtitulos-ModoClaro" id="subtitulo subInstalaciones">DOBLES</h4>
+                    <p class="primerLetraGrande parrafo">
+                        Una dosis doble de lujo y confort, estas habitaciones cuentan con dos camas individuales ideal para acompañantes y amigos. Con interiores a medida, ventanas de piso a techo, balcón privado, mampostería de madera, lujosos baños y vistas a la ciudad; las habitaciones establecen el ambiente para una escapada de la ciudad. 
+                    </p>
+                </div>
+                <div class="contendedorImagenes" id="marco-imagen-dobles">
+                    <img src="../img/dobles.jpeg" alt="Imagen de habitaciones dobles" class="imagenes">
+                </div>
+            </div>
+            <div class="sobreHotel">
+                <div class="tarjetaTematica">
+                    <h4 class="subtitulos subtitulos-ModoClaro" id="subtitulo subInstalaciones">FAMILIARES</h4>
+                    <p class="primerLetraGrande parrafo">
+                        Equipados con una cama King y otro dormitorio doble con dos camas individuales, las suites familiares están diseñadas para darle espacio y confort cuando viajas con la familia. Baños compartidos, espacios brillantes y espaciosos, pusieron el ánimo de un día de exploración de Tandil, con muchos toques de lujo para que te sintieras como en casa.
+                    </p>
+                </div>
+                <div class="contendedorImagenes" id="marco-imagen-familiares">
+                    <img src="../img/familiar.jpeg" alt="Imagen de habitaciones familiares" class="imagenes">
+                </div>
+            </div>
+            <div class="sobreHotel">
+                <div class="tarjetaTematica">
+                    <h4 class="subtitulos subtitulos-ModoClaro" id="subtitulo subInstalaciones">RESIDENCIAS</h4>
+                    <p class="primerLetraGrande parrafo">
+                        Un verdadero hogar lejos del hogar, estas residencias están especialmente dispuestas para largas estadías. Cada residencia es única, con muebles decorados a mano y con los accesorio indispensables para tu paso por la ciudad. Grandes dormitorios y con ambientes separados con comedor, vestidor, balcón privado y cocina americana.
+                    </p>
+                </div>
+                <div class="contendedorImagenes" id="marco-imagen-recidencia">
+                    <img src="../img/residencia.jpeg" alt="Imagen de la residencia" class="imagenes">
+                </div>
+            </div>
+        </div>
+        <section class="sectorInferior">
+            <div class="sobreContacto">
+                <div class="contendedorImagenes" id="portaRetrato">
+                    <img src="../img/logo.png" alt="Imagen del Hotel" class="imagenes" id="escudoHotel">
+                    <div id="estrellas">✯✯✯</div>
+                </div>
+                <div class="contacto contacto-ModoClaro" id="tarjetaDeContacto">
+                    <p>Calle Guevara Gallardo 1342 - Tandil</p>
+                    <p>www.hoteldelasierras_tandil@gmail.com</p>
+                    <p>2942 - 43276523</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="desarrolladores desarrolladores-ModoClaro" id="tarjetasAlumnos">
+            <p>Micaela Zuzulich & Guillermo Castiglioni</p>
+            <p>TUDAI 2024 - UNICEN</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/menuDesplegable.js"></script>
+    <script type="text/javascript" src="../js/modoOscuro.js"></script>
+</body>
+</html>

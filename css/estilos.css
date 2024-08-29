@@ -1,0 +1,316 @@
+/* --------------- CONFIGURACIONES PARA MODO MOBILE VERTICAL ---------------*/
+
+/* --------------- PROPIEDADES GENERALES ---------------*/
+* {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+/* --------------- PROPIEDADES DE TAG ---------------*/
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px #b3aeae;
+}
+
+p.primerLetraGrande::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* --------------- PROPIEDADES PARA LAS CLASES ---------------*/
+
+.logo {
+    width: 110px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.main-ModoClaro {
+    background-color: rgb(182, 197, 154);
+    color: #1b1a1a;
+}
+
+.sectorSuperior {
+    background-image: url(../img/paisaje1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 300px;
+}
+
+.sobreTandil, .sobreHotel, .sobreActividades, .sobreContacto, .contacto, .desarrolladores, .contendedorImagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.tarjetaTematica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulos {
+    padding: 15px 30px;
+    margin-top: 60px;
+    border: 1px solid #000;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
+
+.parrafo {
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.imagenes {
+    height: 300px;
+    width: 100%;
+}
+
+.botones {
+    width: 300px;
+    height: 40px;
+    margin: 40px;
+    letter-spacing: 5px;
+    box-shadow: 3px 3px 10px #000;
+    transition: transform 0.3s;
+}
+
+.botones:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: none;
+
+}
+
+.botones:active {
+    transform: scale(0.9);
+}
+
+.contacto {
+    width: 100%;
+    padding: 10px;
+}
+
+.contacto-ModoClaro {
+    background-color: #8f8a8a;
+}
+
+.contacto p {
+    margin: 0px;
+}
+
+.desarrolladores {
+    height: 40px;
+    font-size: 10px;
+}
+
+.desarrolladores-ModoClaro {
+    background-color: #f7f5f5;
+}
+
+/* --------------- PROPIEDADES PARA ID --------------- */
+
+#estrellas {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 30px;
+    color: #D4AF37;
+}
+
+/* ESPECIFICO PARA UNA SOLA IMAGEN EN DISTNTOS HTML*/
+#imagen-pileta, #imagen-snacks { 
+    width: 112%;
+}
+
+/* --------------- CONFIGURACIONES PARA MODO OSCURO ---------------*/
+
+.main-ModoOscuro {
+    background-color: rgb(27, 27, 27);
+    color: #f7f5f5;
+}
+
+.contendedorImagenes-ModoOscuro {
+    box-shadow: 0px 0px 5px 2px  #8f8a8a;
+    border-radius: 165px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.contacto-ModoOscuro {
+    background-color: #312f2f;
+}
+
+.desarrolladores-ModoOscuro {
+    background-color: #8f8a8a;
+}
+
+#escudoHotel, #estrellas {
+    margin-left: 22px;
+}
+
+/* --------------- CONFIGURACIONES PARA MODO MOBILE HORIZONTAL ---------------*/
+
+@media only screen and (min-width: 480px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 80px;
+        padding: 15px;
+    }
+
+    .sectorSuperior {
+        background-repeat:round;
+    }
+
+    .contendedorImagenes {
+        border: 1px solid #1b1a1a;
+        padding: 20px;
+    }
+
+    #portaRetrato {
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    .parrafo {
+        font-size: 22px;
+    }
+
+    p.primerLetraGrande::first-letter {
+        font-size: 30px;
+    }
+
+    /* ESPECIFICO PARA UNA SOLA IMAGEN EN DISTNTOS HTML*/
+    #marco-imagen-dobles, #marco-imagen-recidencia, #marco-imagen-gastronomia { 
+    width: 80%; 
+    }
+
+    #imagen-snacks, #imagen-pileta { 
+    width: 100%;
+    }
+}
+
+/* --------------- CONFIGURACIONES PARA MODO TABLET ---------------*/
+
+@media only screen and (min-width: 768px) {
+
+    .sobreTandil, .sobreHotel {
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 20px 0px;
+    }
+
+    .parrafo {
+        width: 300px;
+        padding: 0px;
+        font-size: 14px;
+        margin: 40px;
+    }
+
+    .subtitulos {
+        width: 200px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .contendedorImagenes {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .imagenes {
+        height: 250px;
+    }
+
+    .sobreActividades {
+        flex-direction: row-reverse;
+        justify-content:space-around;
+    }
+
+    /* ESPECIFICO PARA UNA SOLA IMAGEN EN DISTNTOS HTML*/
+    #marco-imagen-pileta, #marco-imagen-spa { 
+        width: 110%; 
+    }
+
+    #marco-imagen-snacks, #marco-imagen-gastronomia {
+        width: 45%;
+    }
+
+    #marco-imagen-familiares {
+        width: 90%;
+    }
+    
+}
+
+/* --------------- CONFIGURACIONES PARA MODO NOTEBOOK ---------------*/
+
+@media only screen and (min-width: 1024px) {
+    
+    main {
+        padding: 20px;
+    }
+
+    .sectorSuperior {
+        height: 400px;
+    }
+
+    .sectorCentral {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        border: 3px double #1b1a1a;
+    }
+
+    .sobreTandil, .sobreHotel, .sobreActividades {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .contacto {
+        border: 3px double #1b1a1a;
+    }
+
+    /* ESPECIFICO PARA UNA SOLA IMAGEN EN DISTNTOS HTML*/
+    #marco-imagen-dobles { 
+        width: 54%; 
+    }
+
+    #marco-imagen-gastronomia {
+        width: 75%;
+    }
+
+    #marco-imagen-snacks {
+        width: 100%;
+    }
+
+    #marco-imagen-pileta, #marco-imagen-spa { 
+        width: 100%; 
+    }
+}
+
+/* --------------- CONFIGURACIONES PARA MODO MONITORES ---------------*/
+
+@media only screen and (min-width: 1200px) {
+    .sectorSuperior {
+        height: 400px;
+    }
+}

@@ -1,0 +1,104 @@
+/* PROPIEDADES PARTICULARES PARA EL FORMULARIO DE CONTACTO */
+
+.sectorCentral, .formularioContacto, .formulario, .form-Bloque-Superior-input, .form-Bloque-Superior-textarea, .form-Bloque-Inferior {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectorCentral {
+    align-items: center;
+}
+
+.formularioContacto {
+    width: 300px;
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid #312f2f;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px#312f2f;
+}
+
+.formulario, .form-Bloque-Superior-input {
+    gap: 30px;
+}
+
+.form-Bloque-Superior-textarea {
+    padding-top: 30px;
+}
+
+.entradas {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 2px#312f2f;
+    background-color: rgb(252, 250, 249);
+    transition: transform 0.2s;
+}
+
+.entradas:focus {
+    background-color: rgba(252, 250, 249, 0.61);
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px #d0e47894;
+    cursor: pointer;
+    outline: #d0e478;
+}
+
+.entradas:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.formulario textarea {
+    height: 200px;
+    padding: 10px;
+}
+
+.btnFormulario {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+#verificar {
+    font-size: 10px;
+}
+
+/* --------------- CONFIGURACIONES PARA MODO TABLET ---------------*/
+
+@media only screen and (min-width: 768px) {
+    .sectorCentral {
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 20px 0px;
+    }
+
+}
+
+/* --------------- CONFIGURACIONES PARA MODO NOTEBOOK ---------------*/
+
+@media only screen and (min-width: 1024px) {
+       
+    .formularioContacto {
+        width: 600px;
+        height: 400px;
+    }
+    
+    .form-Bloque-Superior, .form-Bloque-Inferior {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .form-Bloque-Superior-textarea {
+        width: 300px;
+    }
+
+    .btnFormulario {
+        width: 120px;
+        margin-bottom: 30px;
+    }
+
+    
+}
+
